@@ -1,5 +1,4 @@
 from django.forms import ModelForm
-from django_countries.widgets import CountrySelectWidget
 
 from .models import ExtraInfo
 
@@ -16,4 +15,3 @@ class ExtraInfoForm(ModelForm):
     class Meta(object):
         model = ExtraInfo
         fields = ('country',)
-        widgets = {'country': CountrySelectWidget()}

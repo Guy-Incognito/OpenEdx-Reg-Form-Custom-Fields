@@ -7,8 +7,7 @@ setup(
     description='OpenEdx - Custom Fields for Registration Form',
     packages=['reg_form_additional_fields'],
     install_requires=[
-        'Django',
-        'django-countries'
+        'Django'
     ],
 )
 
