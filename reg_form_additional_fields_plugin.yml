@@ -1,0 +1,11 @@
+---
+name: reg_form_additional_fields_plugin
+version: 0.1.0
+patches:
+    lms-env: |
+      "ADDL_INSTALLED_APPS": ["reg_form_additional_fields"],
+      "ENABLE_COMBINED_LOGIN_REGISTRATION": true,
+      "REGISTRATION_EXTENSION_FORM": "reg_form_additional_fields.forms.ExtraInfoForm"
+
+    cms-env: |
+      "ENABLE_COMBINED_LOGIN_REGISTRATION": true
